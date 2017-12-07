@@ -2,8 +2,8 @@
 
 ## Description 
 
-To simple scripts to test communication between servers. 
-I was suspecting 'rate limiting' on a client environment over a specific port. So I've built these two programs to test various rates of hundereds of client connections. 
+Two simple scripts to test communication between servers. 
+I was suspecting _rate limiting_ on a client environment over a specific port. So I've built these two programs to test various rates of hundereds of client connections. 
 
 
 # How to use 
@@ -13,6 +13,7 @@ I was suspecting 'rate limiting' on a client environment over a specific port. S
 ```
 python echo_server.py 135
 ```
+
 * `echo_client.py' should run from the client side by specifying the target host and port. Example:
 ```
 python echo_client.py SRPROD 135
@@ -23,10 +24,10 @@ python echo_client.py SRPROD 135
 ```
 
 The script `echo_server.py` writes logs to the file `connections.log`. Example: 
-`Connection from : ('172.24.192.10', 44972)`
+```Connection from : ('172.24.192.10', 44972)```
 
 The script `echo_client.py` writes logs to the file `resp.log`. Example of a successful Echo-Reply sequence:
-`Resp OK : PID : 2415`
+```Resp OK : PID : 2415```
 
 The script `launcher.sh` waits for 0.05 second after starting a client. You can adjust the command as you please.
 
