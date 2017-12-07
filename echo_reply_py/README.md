@@ -24,10 +24,14 @@ python echo_client.py SRPROD 135
 ```
 
 The script `echo_server.py` writes logs to the file `connections.log`. Example: 
-```Connection from : ('172.24.192.10', 44972)```
+```
+Connection from : ('172.24.192.10', 44972)
+```
 
 The script `echo_client.py` writes logs to the file `resp.log`. Example of a successful Echo-Reply sequence:
-```Resp OK : PID : 2415```
+```
+Resp OK : PID : 2415
+```
 
 The script `launcher.sh` waits for 0.05 second after starting a client. You can adjust the command as you please.
 
